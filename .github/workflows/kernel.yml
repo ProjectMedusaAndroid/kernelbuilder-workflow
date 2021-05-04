@@ -16,7 +16,6 @@ jobs:
         key_file: id_ecdsa
 
     - uses: actions/checkout@v2
-    - run: source ubuntu-run.sh
 
     - name: Set GitHub configs
       run: |
