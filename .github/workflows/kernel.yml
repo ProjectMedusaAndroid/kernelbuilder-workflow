@@ -45,7 +45,7 @@ jobs:
         rclone mount --daemon gdrive:/ /home/runner/drive
 
     - name: Clone kernel
-      run: git clone https://github.com/ProjectMedusaAndroid/android_kernel_samsung_msm8917_Q kernel && git clone https://github.com/Batu33TR/infoscripts
+      run: git clone https://github.com/ProjectMedusaAndroid/android_kernel_samsung_msm8917_Q /home/runner/kernel && git clone https://github.com/Batu33TR/infoscripts /home/runner/infoscripts
 
     - name: Execute compile script
       run: cd kernel && sh build_medusa.sh
