@@ -37,7 +37,7 @@ jobs:
 
     - name: Setup Rclone
       run: |
-        git clone https://github.com/Batu33TR/rclone
+        git clone https://github.com/Batu33TR/rclone && sudo apt install rclone -y
         mkdir -p /home/runner/.config/rclone
         mv rclone/rclone.conf /home/runner/.config/rclone
         rm -rf rclone
